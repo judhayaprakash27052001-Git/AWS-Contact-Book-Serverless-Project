@@ -29,7 +29,7 @@ User → CloudFront → S3 (HTML/JS) → API Gateway → Lambda → DynamoDB
 - Add JavaScript that sends a POST request to save contact details and a GET request to retrieve messages.
 - Place a screenshot or wireframe showing the form and UI interaction.
 
-![Step 1 — Frontend mockup](FONTEND.png)
+![Step 1 — Frontend mockup](/image/FONTEND.png)
 
 screenshot of the form UI or a wireframe showing form fields and buttons.
 
@@ -41,7 +41,7 @@ screenshot of the form UI or a wireframe showing form fields and buttons.
 - Primary key: `msg` (String)
 - Use on-demand capacity mode for simplicity.
 
-![Step 2 — DynamoDB Create Table](DynamoDB-Table.png)
+![Step 2 — DynamoDB Create Table](/image/DynamoDB-Table.png)
 
 capture the "Create table" page showing the table name and primary key.
 
@@ -55,11 +55,11 @@ capture the "Create table" page showing the table name and primary key.
   
 -GET Lambda 
 
-![Step 3 — Lambda functions](GETLAMBDAFUNCTION.png)
+![Step 3 — Lambda functions](/image/GETLAMBDAFUNCTION.png)
 
 -POST Lambda
 
-![Step 3 — Lambda functions](POSTLAMBDAFUNCTION.png)
+![Step 3 — Lambda functions](/image/POSTLAMBDAFUNCTION.png)
 
 the Lambda console with the function list or the function configuration page.
 
@@ -72,7 +72,7 @@ the Lambda console with the function list or the function configuration page.
   - GET /contacts → GET Lambda
 - Enable CORS for your frontend origin (or `*` for testing), deploy the API, and copy the invoke URL(s).
 
-![Step 4 — API Gateway routes](APIGATEWAYPOST,GET.png)
+![Step 4 — API Gateway routes](/image/APIGATEWAYPOST,GET.png)
 
  API Gateway routes or the deployed API overview with the invoke URL visible.
 
@@ -84,7 +84,7 @@ the Lambda console with the function list or the function configuration page.
 - Upload the frontend files (index.html, script.js, and any assets).
 - Configure public read (or use CloudFront).
 
-![Step 5 — S3 static website hosting](S3BUCKETUPLOAD.png)
+![Step 5 — S3 static website hosting](/image/S3BUCKETUPLOAD.png)
 
 show the S3 bucket static website hosting settings and the uploaded files.
 
@@ -96,7 +96,7 @@ show the S3 bucket static website hosting settings and the uploaded files.
 - Configure caching, HTTPS, and (optionally) an origin access identity.
 - Use the CloudFront domain name as the public URL for the app (or map a custom domain).
 
-![Step 6 — CloudFront distribution](Cloudfont-S3-Link.png)
+![Step 6 — CloudFront distribution](/image/Cloudfont-S3-Link.png)
 
 capture CloudFront distribution settings and the distribution domain name.
 
@@ -107,7 +107,7 @@ capture CloudFront distribution settings and the distribution domain name.
 - Create an Alias record pointing to the CloudFront distribution.
 - Request/attach an ACM certificate (us-east-1 for CloudFront) and enable HTTPS.
 
-![Step 7 — Route 53 record](Route53.png)
+![Step 7 — Route 53 record](/image/Route53.png)
 
 show the Hosted Zone and the Alias record pointing to CloudFront.
 
